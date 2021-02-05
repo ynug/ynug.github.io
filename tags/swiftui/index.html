@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+
+<html lang="ja-jp" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>SwiftUI - 日々の蓄積</title>
+<meta name="description" content="">
+
+<link rel="alternate" type="application/rss+xml" href="https://ynug.github.io/tags/swiftui/index.xml" title="日々の蓄積" />
+<link rel="icon" type="image/x-icon" href="https://ynug.github.io/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://ynug.github.io/favicon.png">
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="https://ynug.github.io/css/style.cd267f2711fc8d550fa9b9004cd2dca13ae71d0b7af4aecb3c92e1e617996bef.css" integrity="sha256-zSZ/JxH8jVUPqbkATNLcoTrnHQt69K7LPJLh5heZa&#43;8=">
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="SwiftUI" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ynug.github.io/tags/swiftui/" />
+<meta property="og:updated_time" content="2021-02-06T00:39:22+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SwiftUI"/>
+<meta name="twitter:description" content=""/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <h1 class="site-title">
+    <a href="/">日々の蓄積</a>
+</h1>
+
+    <nav>
+        
+        
+        <a class="" href="https://ynug.github.io/about/" title="">About</a>
+        
+        <a class="" href="https://ynug.github.io/tags/" title="">Tags</a>
+        
+        <a class="" href="https://ynug.github.io/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    <h1>Tag: SwiftUI</h1>
+    <div class="post-info">
+        <a href="https://ynug.github.io/tags">To all tags</a>
+    </div>
+    
+        <article class="post-list h-feed">
+    <header class="post-header">
+        <h1 class="p-name post-title"><a class="u-url" href="/posts/tried-swift-ui-tutorial/">SwiftUI Tutorials を試してみました！</a></h1>
+    </header>
+
+    <div class="content post-summary p-summary">
+        Apple公式で公開されている SwiftUI Tutorials を試してみました。
+触ってみた感じとても簡潔にかけて、プレビューを見ながらデザインできるので Storyboard には戻れなくなります。
+チュートリアルで使った部品を使って、郵便番号を調べるアプリを試しに作ってみました。
+https://github.com/ynug/PostalCodeSwiftUISample
+キーワードから検索した際に、郵便番号の1桁のみで検索をかけた場合1万件位ヒットします。
+表示自体は問題ないのですが、再検索を行おうとした際にフリーズして動かなくなります。
+郵便番号を4桁くらい入力して検索結果件数が少ない場合は、再検索を行っても問題はありませんでした。
+使い方が悪いのかListのバグなのか良くわかりません。
+実装の問題であればぜひ PR をお願いします！
+都道府県から調べる キーワードから調べる 
+    </div>
+    
+    
+    
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2021-02-06</div>
+    
+    
+    <a class="post-hidden-url u-url" href="https://ynug.github.io/posts/tried-swift-ui-tutorial/">https://ynug.github.io/posts/tried-swift-ui-tutorial/</a>
+    <div class="post-hidden-author p-author">yuna</div>
+
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="https://ynug.github.io/tags/ios">#iOS</a></li>
+                    
+                        <li><a href="https://ynug.github.io/tags/swiftui">#SwiftUI</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+</article>
+    
+    
+
+
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© yuna, 2021<br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+    <script>
+    const STORAGE_KEY = 'user-color-scheme'
+    const defaultTheme = "auto"
+
+    let currentTheme
+    let switchButton
+    let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+    const autoChangeScheme = e => {
+        currentTheme = e.matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', currentTheme)
+        changeButtonText()
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        switchButton = document.querySelector('.theme-switcher')
+        currentTheme = detectCurrentScheme()
+        if (currentTheme == 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+        }
+        if (currentTheme == 'auto') {
+            autoChangeScheme(autoDefinedScheme);
+            autoDefinedScheme.addListener(autoChangeScheme);
+        }
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    })
+
+    function detectCurrentScheme() {
+        if (localStorage.getItem(STORAGE_KEY)) {
+            return localStorage.getItem(STORAGE_KEY)
+        } 
+        if (defaultTheme) {
+            return defaultTheme
+        } 
+        if (!window.matchMedia) {
+            return 'light'
+        } 
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark'
+        }
+        return 'light'
+    }
+
+    function changeButtonText()
+    {   
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+
+    function switchTheme(e) {
+        if (currentTheme == 'dark') {
+            localStorage.setItem(STORAGE_KEY, 'light')
+            document.documentElement.setAttribute('data-theme', 'light')
+            currentTheme = 'light'
+        } else {
+            localStorage.setItem(STORAGE_KEY, 'dark')
+            document.documentElement.setAttribute('data-theme', 'dark')
+            currentTheme = 'dark'
+        }
+        changeButtonText()
+    }
+    </script>
+   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://ynug.github.io/ class="p-name u-url url fn" rel="me">yuna</a> 
+
+    
+
+    
+</p> 
+    
+</footer>
+
+        
+    </div>
+</body>
+</html>
