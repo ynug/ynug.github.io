@@ -6,7 +6,7 @@ paginate = 10
 #canonifyurls = true
 
 disqusShortname = ""
-googleAnalytics = ""
+googleAnalytics = "G-ENEBNC1RG1"
 
 [author]
 name = "yuna"
