@@ -10,7 +10,7 @@ Apple公式で公開されている [SwiftUI Tutorials](https://developer.apple.
 触ってみた感じとても簡潔にかけて、プレビューを見ながらデザインできるので Storyboard には戻れなくなります。
 
 チュートリアルで使った部品を使って、郵便番号を調べるアプリを試しに作ってみました。  
-https://github.com/ynug/PostalCodeSwiftUISample
+[https://github.com/ynug/PostalCodeSwiftUISample](https://github.com/ynug/PostalCodeSwiftUISample)
 
 キーワードから検索した際に、郵便番号の1桁のみで検索をかけた場合1万件位ヒットします。  
 表示自体は問題ないのですが、再検索を行おうとした際にフリーズして動かなくなります。
