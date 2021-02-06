@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iOS on 日々の蓄積</title><link>https://ynug.github.io/tags/ios/</link><description>日々の蓄積 (iOS)</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 07 Feb 2021 01:14:20 +0900</lastBuildDate><atom:link href="https://ynug.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml"/><item><title>iOSのパッケージ管理ツールはどれが良いのか？</title><link>https://ynug.github.io/posts/ios-package-management-tool/</link><pubDate>Sun, 07 Feb 2021 01:14:20 +0900</pubDate><guid>https://ynug.github.io/posts/ios-package-management-tool/</guid><description>&lt;p>結論をいうと &lt;code>CocoaPods&lt;/code> が良いかなと思います。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carthage on 日々の蓄積</title><link>https://ynug.github.io/tags/carthage/</link><description>日々の蓄積 (Carthage)</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 07 Feb 2021 01:14:20 +0900</lastBuildDate><atom:link href="https://ynug.github.io/tags/carthage/index.xml" rel="self" type="application/rss+xml"/><item><title>iOSのパッケージ管理ツールはどれが良いのか？</title><link>https://ynug.github.io/posts/ios-package-management-tool/</link><pubDate>Sun, 07 Feb 2021 01:14:20 +0900</pubDate><guid>https://ynug.github.io/posts/ios-package-management-tool/</guid><description>&lt;p>結論をいうと &lt;code>CocoaPods&lt;/code> が良いかなと思います。&lt;/p>
 &lt;p>私のパッケージ管理ツールの変遷としては、まず&lt;code>CocoaPods&lt;/code>を数年利用していました。&lt;br>
 その後は、&lt;code>CocoaPods&lt;/code>と&lt;code>Carthage&lt;/code>を併用していて、ライブラリの整備が完了した時点で完全に&lt;code>Carthage&lt;/code>に移行しました。&lt;br>
 Xcode12からは一手間加えないと&lt;code>Carthage&lt;/code>が利用できなくなってしまったので、いい機会だと思い&lt;code>Swift Package Manager&lt;/code>に移行しました。&lt;br>
@@ -40,16 +40,4 @@ Xcode12からは一手間加えないと&lt;code>Carthage&lt;/code>が利用で�
 実際に、ある企業が出しているiOS向けのライブラリで使っていたのですが、利用しているtagが消えて大騒ぎしたことがあります。&lt;br>
 デモプロジェクトで使う分には、簡単にライブラリを組み込めるのでおすすめです。&lt;/p>
 &lt;p>商用利用するとなると&lt;code>CocoaPods&lt;/code>か&lt;code>Carthage&lt;/code>かと思いますが、&lt;code>Carthage&lt;/code>の場合はビルド時に必要なので、開発とは別のPCでクローンしてビルドしようとした時にすぐに動かせないことがあります。&lt;br>
-プロジェクトの汚染が我慢できるなら&lt;code>CocoaPods&lt;/code>が一番手軽で安全だと思います。&lt;/p></description></item><item><title>SwiftUI Tutorials を試してみました！</title><link>https://ynug.github.io/posts/tried-swift-ui-tutorial/</link><pubDate>Sat, 06 Feb 2021 00:39:22 +0900</pubDate><guid>https://ynug.github.io/posts/tried-swift-ui-tutorial/</guid><description>&lt;p>Apple公式で公開されている &lt;a href="https://developer.apple.com/tutorials/swiftui/" target="_blank">SwiftUI Tutorials&lt;/a> を試してみました。&lt;/p>
-&lt;p>触ってみた感じとても簡潔にかけて、プレビューを見ながらデザインできるので Storyboard には戻れなくなります。&lt;/p>
-&lt;p>チュートリアルで使った部品を使って、郵便番号を調べるアプリを試しに作ってみました。&lt;br>
-&lt;a href="https://github.com/ynug/PostalCodeSwiftUISample" target="_blank">https://github.com/ynug/PostalCodeSwiftUISample&lt;/a>&lt;/p>
-&lt;p>キーワードから検索した際に、郵便番号の1桁のみで検索をかけた場合1万件位ヒットします。&lt;br>
-表示自体は問題ないのですが、再検索を行おうとした際にフリーズして動かなくなります。&lt;/p>
-&lt;p>郵便番号を4桁くらい入力して検索結果件数が少ない場合は、再検索を行っても問題はありませんでした。&lt;/p>
-&lt;p>使い方が悪いのかListのバグなのか良くわかりません。&lt;br>
-実装の問題であればぜひ PR をお願いします！&lt;/p>
-&lt;p>都道府県から調べる
-&lt;img src="https://ynug.github.io/img/tried-swift-ui-tutorial-1.png" style="border:solid 5px #e6e6e6"/>&lt;/p>
-&lt;p>キーワードから調べる
-&lt;img src="https://ynug.github.io/img/tried-swift-ui-tutorial-2.png" style="border:solid 5px #e6e6e6"/>&lt;/p></description></item></channel></rss>
+プロジェクトの汚染が我慢できるなら&lt;code>CocoaPods&lt;/code>が一番手軽で安全だと思います。&lt;/p></description></item></channel></rss>
