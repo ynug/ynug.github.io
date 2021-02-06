@@ -1,67 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CocoaPods on 日々の蓄積</title>
-    <link>https://ynug.github.io/tags/cocoapods/</link>
-    <description>日々の蓄積 (CocoaPods)</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 07 Feb 2021 01:14:20 +0900</lastBuildDate>
-    
-    <atom:link href="https://ynug.github.io/tags/cocoapods/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>iOSのパッケージ管理ツールはどれが良いのか？</title>
-      <link>https://ynug.github.io/posts/ios-package-management-tool/</link>
-      <pubDate>Sun, 07 Feb 2021 01:14:20 +0900</pubDate>
-      
-      <guid>https://ynug.github.io/posts/ios-package-management-tool/</guid>
-      <description>&lt;p&gt;結論をいうと &lt;code&gt;CocoaPods&lt;/code&gt; が良いかなと思います。&lt;/p&gt;
-&lt;p&gt;私のパッケージ管理ツールの変遷としては、まず&lt;code&gt;CocoaPods&lt;/code&gt;を数年利用していました。&lt;br&gt;
-その後は、&lt;code&gt;CocoaPods&lt;/code&gt;と&lt;code&gt;Carthage&lt;/code&gt;を併用していて、ライブラリの整備が完了した時点で完全に&lt;code&gt;Carthage&lt;/code&gt;に移行しました。&lt;br&gt;
-Xcode12からは一手間加えないと&lt;code&gt;Carthage&lt;/code&gt;が利用できなくなってしまったので、いい機会だと思い&lt;code&gt;Swift Package Manager&lt;/code&gt;に移行しました。&lt;br&gt;
-２ヶ月くらい使ったのですが、&lt;code&gt;CocoaPods&lt;/code&gt;に戻ることにしました。&lt;/p&gt;
-&lt;p&gt;個人的に使ってみた感じのそれぞれのメリットデメリットを記載します。&lt;/p&gt;
-&lt;h2 id=&#34;cocoapodshttpsgithubcomcocoapodscocoapods&#34;&gt;&lt;a href=&#34;https://github.com/CocoaPods/CocoaPods&#34; target=&#34;_blank&#34;&gt;CocoaPods&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;メリット&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ライブラリをgit管理しておくと、cloneしただけでビルドができる&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;デメリット&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;xcworkspaceができてプロジェクトが汚染される&lt;/li&gt;
-&lt;li&gt;ビルドに時間がかかる&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;CocoaPods&lt;/code&gt;の初期化に時間がかかる&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;carthagehttpsgithubcomcarthagecarthage&#34;&gt;&lt;a href=&#34;https://github.com/Carthage/Carthage&#34; target=&#34;_blank&#34;&gt;Carthage&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;メリット&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;CocoaPods&lt;/code&gt;と違いプロジェクトが汚染されない&lt;/li&gt;
-&lt;li&gt;ライブラリは事前にビルドされるので、プロジェクトのビルドが早い&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;デメリット&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ライブラリをgit管理していても、ビルドする時に&lt;code&gt;Carthage&lt;/code&gt;が入っていないとビルド出来ない&lt;/li&gt;
-&lt;li&gt;Swiftのバージョンが上がるたびにエラーが出る(SwiftのABIが安定したので解決してるかもしれない)&lt;/li&gt;
-&lt;li&gt;Xcode12からは一手間加えないとビルドが通らない&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;swift-package-managerhttpsswiftorgpackage-manager&#34;&gt;&lt;a href=&#34;https://swift.org/package-manager/&#34; target=&#34;_blank&#34;&gt;Swift Package Manager&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;メリット&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Xcode標準でサポートしているので、ライブラリの追加削除が簡単&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;デメリット&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ライブラリをプロジェクトと一緒にgit管理ができない&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;商用プロジェクトの場合は、ライブラリをgit管理できない&lt;code&gt;Swift Package Manager&lt;/code&gt;のリスクは大きいかなと思います。&lt;br&gt;
-実際に、ある企業が出しているiOS向けのライブラリで使っていたのですが、利用しているtagが消えて大騒ぎしたことがあります。&lt;br&gt;
-デモプロジェクトで使う分には、簡単にライブラリを組み込めるのでおすすめです。&lt;/p&gt;
-&lt;p&gt;商用利用するとなると&lt;code&gt;CocoaPods&lt;/code&gt;か&lt;code&gt;Carthage&lt;/code&gt;かと思いますが、&lt;code&gt;Carthage&lt;/code&gt;の場合はビルド時に必要なので、開発とは別のPCでクローンしてビルドしようとした時にすぐに動かせないことがあります。&lt;br&gt;
-プロジェクトの汚染が我慢できるなら&lt;code&gt;CocoaPods&lt;/code&gt;が一番手軽で安全だと思います。&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CocoaPods on 日々の蓄積</title><link>https://ynug.github.io/tags/cocoapods/</link><description>日々の蓄積 (CocoaPods)</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 07 Feb 2021 01:14:20 +0900</lastBuildDate><atom:link href="https://ynug.github.io/tags/cocoapods/index.xml" rel="self" type="application/rss+xml"/><item><title>iOSのパッケージ管理ツールはどれが良いのか？</title><link>https://ynug.github.io/posts/ios-package-management-tool/</link><pubDate>Sun, 07 Feb 2021 01:14:20 +0900</pubDate><guid>https://ynug.github.io/posts/ios-package-management-tool/</guid><description>&lt;p>結論をいうと &lt;code>CocoaPods&lt;/code> が良いかなと思います。&lt;/p>
+&lt;p>私のパッケージ管理ツールの変遷としては、まず&lt;code>CocoaPods&lt;/code>を数年利用していました。&lt;br>
+その後は、&lt;code>CocoaPods&lt;/code>と&lt;code>Carthage&lt;/code>を併用していて、ライブラリの整備が完了した時点で完全に&lt;code>Carthage&lt;/code>に移行しました。&lt;br>
+Xcode12からは一手間加えないと&lt;code>Carthage&lt;/code>が利用できなくなってしまったので、いい機会だと思い&lt;code>Swift Package Manager&lt;/code>に移行しました。&lt;br>
+２ヶ月くらい使ったのですが、&lt;code>CocoaPods&lt;/code>に戻ることにしました。&lt;/p>
+&lt;p>個人的に使ってみた感じのそれぞれのメリットデメリットを記載します。&lt;/p>
+&lt;h2 id="cocoapodshttpsgithubcomcocoapodscocoapods">&lt;a href="https://github.com/CocoaPods/CocoaPods" target="_blank">CocoaPods&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>メリット&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>ライブラリをgit管理しておくと、cloneしただけでビルドができる&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>デメリット&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>xcworkspaceができてプロジェクトが汚染される&lt;/li>
+&lt;li>ビルドに時間がかかる&lt;/li>
+&lt;li>&lt;code>CocoaPods&lt;/code>の初期化に時間がかかる&lt;/li>
+&lt;/ul>
+&lt;h2 id="carthagehttpsgithubcomcarthagecarthage">&lt;a href="https://github.com/Carthage/Carthage" target="_blank">Carthage&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>メリット&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>CocoaPods&lt;/code>と違いプロジェクトが汚染されない&lt;/li>
+&lt;li>ライブラリは事前にビルドされるので、プロジェクトのビルドが早い&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>デメリット&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>ライブラリをgit管理していても、ビルドする時に&lt;code>Carthage&lt;/code>が入っていないとビルド出来ない&lt;/li>
+&lt;li>Swiftのバージョンが上がるたびにエラーが出る(SwiftのABIが安定したので解決してるかもしれない)&lt;/li>
+&lt;li>Xcode12からは一手間加えないとビルドが通らない&lt;/li>
+&lt;/ul>
+&lt;h2 id="swift-package-managerhttpsswiftorgpackage-manager">&lt;a href="https://swift.org/package-manager/" target="_blank">Swift Package Manager&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>メリット&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Xcode標準でサポートしているので、ライブラリの追加削除が簡単&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>デメリット&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>ライブラリをプロジェクトと一緒にgit管理ができない&lt;/li>
+&lt;/ul>
+&lt;p>商用プロジェクトの場合は、ライブラリをgit管理できない&lt;code>Swift Package Manager&lt;/code>のリスクは大きいかなと思います。&lt;br>
+実際に、ある企業が出しているiOS向けのライブラリで使っていたのですが、利用しているtagが消えて大騒ぎしたことがあります。&lt;br>
+デモプロジェクトで使う分には、簡単にライブラリを組み込めるのでおすすめです。&lt;/p>
+&lt;p>商用利用するとなると&lt;code>CocoaPods&lt;/code>か&lt;code>Carthage&lt;/code>かと思いますが、&lt;code>Carthage&lt;/code>の場合はビルド時に必要なので、開発とは別のPCでクローンしてビルドしようとした時にすぐに動かせないことがあります。&lt;br>
+プロジェクトの汚染が我慢できるなら&lt;code>CocoaPods&lt;/code>が一番手軽で安全だと思います。&lt;/p></description></item></channel></rss>

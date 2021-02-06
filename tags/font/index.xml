@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>font on 日々の蓄積</title>
-    <link>https://ynug.github.io/tags/font/</link>
-    <description>日々の蓄積 (font)</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 06 Feb 2021 03:25:50 +0900</lastBuildDate>
-    
-    <atom:link href="https://ynug.github.io/tags/font/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Android端末に入っているフォントを確認する</title>
-      <link>https://ynug.github.io/posts/android-font-checker/</link>
-      <pubDate>Sat, 06 Feb 2021 03:25:50 +0900</pubDate>
-      
-      <guid>https://ynug.github.io/posts/android-font-checker/</guid>
-      <description>&lt;p&gt;AndroidのWebViewにHTML表示させてみたけど、フォントがちゃんと出ない場合があるかと思います。&lt;br&gt;
-そんな時に端末に入っているフォントが確認できると便利だなということでフォントを確認出来るアプリを作りました。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/ynug/androidFontChecker&#34; target=&#34;_blank&#34;&gt;https://github.com/ynug/androidFontChecker&lt;/a&gt;&lt;/p&gt;
-&lt;img src=&#34;https://ynug.github.io/img/android-font-checker-1.png&#34; style=&#34;border:solid 5px #e6e6e6&#34;/&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>font on 日々の蓄積</title><link>https://ynug.github.io/tags/font/</link><description>日々の蓄積 (font)</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sat, 06 Feb 2021 03:25:50 +0900</lastBuildDate><atom:link href="https://ynug.github.io/tags/font/index.xml" rel="self" type="application/rss+xml"/><item><title>Android端末に入っているフォントを確認する</title><link>https://ynug.github.io/posts/android-font-checker/</link><pubDate>Sat, 06 Feb 2021 03:25:50 +0900</pubDate><guid>https://ynug.github.io/posts/android-font-checker/</guid><description>&lt;p>AndroidのWebViewにHTML表示させてみたけど、フォントがちゃんと出ない場合があるかと思います。&lt;br>
+そんな時に端末に入っているフォントが確認できると便利だなということでフォントを確認出来るアプリを作りました。&lt;/p>
+&lt;p>&lt;a href="https://github.com/ynug/androidFontChecker" target="_blank">https://github.com/ynug/androidFontChecker&lt;/a>&lt;/p>
+&lt;img src="https://ynug.github.io/img/android-font-checker-1.png" style="border:solid 5px #e6e6e6"/></description></item></channel></rss>
