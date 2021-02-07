@@ -3,10 +3,12 @@ languageCode = "ja-jp"
 title = "日々の蓄積"
 theme = "anubis"
 paginate = 10
+hasCJKLanguage = true
 #canonifyurls = true
 
 disqusShortname = ""
 googleAnalytics = "G-ENEBNC1RG1"
+
 
 [author]
 name = "yuna"
